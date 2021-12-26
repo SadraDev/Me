@@ -64,7 +64,7 @@ class _MeState extends State<Me> {
                       textAlign: TextAlign.center,
                       style: TextStyle(fontSize: 18, fontFamily: 'Poppins-ExtraLight'),
                     ),
-                  ),
+                  ),  
                   MeCard(
                     status: status,
                     icon: FontAwesomeIcons.telegram,
@@ -74,17 +74,17 @@ class _MeState extends State<Me> {
                   ),
                   MeCard(
                     status: status,
-                    icon: FontAwesomeIcons.whatsapp,
-                    iconColor: Colors.green,
-                    text: 'I\'m on whatsapp too!',
-                    url: 'https://api.whatsapp.com/send/?phone=%2B989370603580',
-                  ),
-                  MeCard(
-                    status: status,
                     icon: FontAwesomeIcons.github,
                     iconColor: status ? Colors.white : Colors.black,
                     text: 'GitHub Profile',
                     url: 'https://github.com/SadraDev',
+                  ),
+                  MeCard(
+                    status: status,
+                    icon: FontAwesomeIcons.whatsapp,
+                    iconColor: Colors.green,
+                    text: 'My whatsapp',
+                    url: 'https://api.whatsapp.com/send/?phone=%2B989370603580',
                   ),
                   MeCard(
                     status: status,
@@ -169,6 +169,7 @@ class MeCard extends StatelessWidget {
                     child: Text(
                       "$text",
                       textAlign: TextAlign.start,
+                      style: const TextStyle(fontFamily: 'Poppins-ExtraLight'),
                     ),
                   ),
                 ],
