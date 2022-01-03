@@ -81,6 +81,13 @@ class _MeState extends State<Me> {
                   ),
                   MeCard(
                     status: status,
+                    icon: Icons.email_outlined,
+                    iconColor: Colors.red,
+                    text: 'Email address',
+                    url: 'https://mail.google.com/mail/u/0/#sent?compose=CllgCKCBkLfmmXHplxVssNGQrKglTlgllmRhspLTkkCSzZgtLqhvBtKDRHGJqshxlxzqfMTpbCg',
+                  ),
+                  MeCard(
+                    status: status,
                     icon: FontAwesomeIcons.whatsapp,
                     iconColor: Colors.green,
                     text: 'My whatsapp',
